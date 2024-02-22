@@ -10,6 +10,14 @@ use paste::paste;
 use std::collections::HashMap;
 
 wmi! {
+    /// <https://learn.microsoft.com/it-it/windows/win32/cimwin32prov/win32-baseboard>
+    Win32_BaseBoard, r"Root\CIMV2"
+}
+wmi! {
+    /// <https://learn.microsoft.com/it-it/windows/win32/cimwin32prov/win32-bios>
+    Win32_BIOS, r"Root\CIMV2"
+}
+wmi! {
     /// <https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-cdromdrive>
     Win32_CDROMDrive, r"Root\CIMV2"
 }
@@ -44,4 +52,9 @@ wmi! {
 wmi! {
     /// <https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-tapedrive>
     Win32_TapeDrive, r"Root\CIMV2"
+}
+
+wmi! {
+    /// <https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-videocontroller>
+    Win32_VideoController, r"Root\CIMV2"
 }
