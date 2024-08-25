@@ -1,6 +1,6 @@
 [package]
 name = "query-wmi"
-version = "1.1.3-frk"
+version = "1.1.3+frk.1"
 edition = "2021"
 authors = ["sn99 <siddharthn.099@gmail.com>"]
 description = "A crate to query WMI classes in Windows OS"
@@ -10,6 +10,8 @@ keywords = ["wmi", "query", "windows", "win32", "com"]
 readme = "README.md"
 documentation = "https://docs.rs/query-wmi"
 license = "AGPL-3.0-only"
+
+publish = ["elleci"]
 
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"
